@@ -5,8 +5,8 @@
 <p class="field">
   <%= label_tag "name_on_card_#{payment_method.id}", Spree.t(:name_on_card) %><span class="required">*</span><br />
   <%= text_field_tag "#{param_prefix}[name]",
-                     "#{@order.billing_firstname} #{@order.billing_lastname}",
-                     { id: "name_on_card_#{payment_method.id}", 
+                     "",
+                     { id: "name_on_card_#{payment_method.id}",
                        data: { conekta: 'card[name]' } } %>
 </p>
 
